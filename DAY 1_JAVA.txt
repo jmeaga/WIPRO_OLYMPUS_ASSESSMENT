@@ -1,0 +1,194 @@
+DAY 1:
+
+7. Arithmetic Operators in Java
+
+Instructions:
+
+Write a program that takes two numbers as input from the user and performs arithmetic operations on them using the arithmetic operators (sum, difference, product, quotient, remainder) in Java.
+
+Examples:
+
+# Examples: 
+1. int num1 = 10; 
+   int num2 = 5; 
+   int sum = num1 + num2; 
+   System.out.println(sum); // Output: 15  
+Sample Input & Output:
+
+Sample Input:
+Enter the first number: 10
+Enter the second number: 5
+
+Sample Output:
+Sum: 15
+Difference: 5
+Product: 50
+Quotient: 2
+Remainder: 0
+
+Hints:
+1. Use the Scanner class to read input from the user.
+2. Declare variables to store the input values and the results of the arithmetic operations.
+3. Use the appropriate arithmetic operators to perform the calculations.
+4. Print the results using the System.out.println() method.
+5. Remember to handle division by zero when calculating the quotient.
+
+Your answer
+
+import java.util.Scanner;
+
+public class ArithmeticOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // TODO: Write your code here
+       int num1=scanner.nextInt();
+       int num2=scanner.nextInt();
+       int Sum=num1+num2;
+       int Difference=num1-num2;
+       int Product=num1*num2;
+       int Quotient=num1/num2;
+       int Remainder=num1%num2;
+       System.out.println("Sum: "+Sum);
+       System.out.println("Difference: "+Difference);
+       System.out.println("Product: "+Product);
+       System.out.println("Quotient: "+Quotient);
+       System.out.print("Remainder: "+Remainder);
+        //scanner.close();
+    }
+}
+
+--------------------------------------------------------------------------------------
+Question 2
+Marks: 1/1
+
+Logical Operators in Java
+Instructions:
+
+Write a program that takes two boolean values as input and performs logical operations (AND, OR) on them using the logical operators& print the result.
+
+Examples:
+
+# Examples: 
+1. boolean a = true; 
+   boolean b = false; 
+   boolean result = a && b; 
+   System.out.println(result); // Output: false 
+Sample Input & Output:
+
+Sample Input:
+true
+false
+
+Sample Output:
+false
+true
+Hints:
+1. Remember to use the correct syntax for the logical operators.
+2. Make sure to include the necessary boolean variables or values in the logical operations.
+3. Check the output on the console to verify if the logical operations are working correctly
+
+Your answer
+
+import java.util.Scanner;
+
+public class LogicalOperatorsExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean input1 = scanner.nextBoolean();
+        boolean input2 = scanner.nextBoolean();
+        boolean res1=input1 && input2;
+        boolean res2=input1 ||input2;
+        System.out.println(res1);
+        System.out.println(res2);
+       
+    }
+}
+--------------------------------------------------------------------------------
+Question 3
+
+9.Relational Operators in Java
+Instructions:
+
+Write a program that takes two integers as input and compares them using relational operators. Print 'true' if the first integer is greater than the second integer, and 'false' otherwise.
+
+Examples:
+
+# Examples: 
+1. Input: 5, 3 
+   Output: true 
+
+2. Input: 2, 7 
+   Output: false 
+Sample Input & Output:
+
+Sample Input:
+5
+3
+
+Sample Output:
+true
+Hints:
+1. Use the '>' operator to compare the first integer with the second integer.
+2. Remember to use the correct syntax for the relational operator.
+3. Check the output on the console to verify if the comparison is working correctly.
+
+Your answer
+
+import java.util.Scanner;
+
+public class RelationalOperatorExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+         if(num1>num2)
+         System.out.print(true);
+         else
+         System.out.print(false);
+        // TODO: Write your code here
+        scanner.close();
+    }
+}
+----------------------------------------------------------------------------------
+Question 4
+
+Check Number Parity:
+Write a program in java to check whether the given number is an even number or not using if else statement.
+
+
+Sample Test Case 1
+
+input
+
+12
+
+output
+
+No is Even
+
+Sample Test Case 2
+
+input
+
+13
+
+output
+
+No is odd
+
+Your answer
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+if(n%2==0)
+System.out.print("No is Even");
+else
+System.out.print("No is odd");
+
+        
+    }
+}
