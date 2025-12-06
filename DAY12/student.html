@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flowers School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome {
+            text-align: center;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 800px;
+       
+        }
+
+        .welcome h1 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+      
+        .profile-section {
+            display: none;
+            margin: 40px auto;
+            padding: 30px;
+            width: 70%;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-section h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .profile-info {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .button {
+            display: block;
+            margin: 30px auto;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+
+   
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .welcome, .profile-section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <div class="logo-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048968.png" alt="School Logo">
+            <h2>Spring Flowers School</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <section class="welcome">
+        <h1>Welcome to Spring Flowers School </h1>
+        <p>Your learning journey starts here! Explore our courses, events, and student resources.</p>
+
+        <button class="button" onclick="showProfile()">View Student Profile</button>
+    </section>
+
+   
+    <section id="studentProfile" class="profile-section">
+        <h2>Student Profile</h2>
+        <div class="profile-info">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Class:</strong> 10th Grade</p>
+            <p><strong>Roll No:</strong> 24</p>
+            <p><strong>Section:</strong> A</p>
+            <p><strong>Email:</strong> johndoe@springflowers.edu</p>
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2025 Spring Flowers School. All rights reserved.</p>
+    </footer>
+
+    <script>
+      
+        function showProfile() {
+            document.getElementById('studentProfile').style.display = 'block';
+            window.scrollTo({
+                top: document.getElementById('studentProfile').offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
